@@ -1,0 +1,174 @@
+@keyframes scrollAnimation {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Mengaplikasikan animasi scroll pada elemen */
+  .scroll-animation {
+    opacity: 0;
+    animation: scrollAnimation 3s ease-in-out forwards;
+  }
+
+@media screen and (max-width: 320px){
+
+    .judul{
+        font-size: 10px;
+    }
+
+    .lead{
+        margin: 0;
+    }
+
+    .navbar{
+        padding: 0;
+    }
+
+    .navbar-brand{
+        font-size: small;
+    }
+
+    .container_product{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product_1{
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .container_product{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+
+    h5{
+        font-size: x-large;
+    }
+    h1 {
+        font-size: xx-large;
+    }
+    p {
+        font-size: medium;    
+    }
+    .judul p {
+        font-size: medium;
+    }
+    .menu_btn{
+        margin-right: 1rem;
+    }
+    .menu_dropdown{
+        min-width:fit-content;
+    }
+    .interaktif{
+        flex-direction: column;
+    }
+    .Judul, .Judul p{
+        font-size:medium;
+    }
+    .text_judul{
+        /* background-color: aqua; */
+        width:fit-content;
+        padding: 5px;
+    }
+    .benefit_container {
+        display: block;
+    }
+    .interaktif1, .interaktif2, .interaktif3{
+        flex-direction: column;
+    }
+    .text_interaktif1, .text_interaktif2, .text_interaktif3{
+        padding: 0 !important;
+        margin-top:1rem;
+        margin-bottom: 2rem;
+    }
+    .interaktif2{
+        flex-direction: column-reverse;
+    }
+    .product_container{
+        justify-content: center;
+    }
+    .Product_1,.Product_2,.Product_3,.Product_4 {
+        display:flex;
+        font-size: smaller;
+    }
+
+    .img_container {
+        max-width: 10rem;
+    }
+}
+
+
+/* css_style */
+    .navbar_button.scrolled {
+        animation: scrollAnimation 0.3s forwards;
+    }
+
+    .Judul p {
+        color: aliceblue;
+    }
+    .text_judul {
+        font-weight: bold;
+        font-size: 50px;
+    }
+    .navbar_button a{
+        float: left;
+        display: block;
+        color: #000000;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        transition: background-color 0.3s;
+        border-radius: 5px;
+    }
+    .navbar_button a:hover{
+        background-color: #0D6EFD;
+        color: white;
+    }
+    /* .navbar_button a:active{
+        background-color: #0B5ED7;
+    } */
+    .benefit_container{
+        margin-top: 10rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .benefit_container img{
+        width: 45rem;
+    }
+    .interaktif1, .interaktif2, .interaktif3 {
+        display: flex;  
+    }
+
+    .text_interaktif1, .text_interaktif3{
+        padding-left: 5rem;
+    }
+
+    .text_interaktif2{
+        padding-right: 5rem;
+    }
+
+    .btn_lihat {
+        direction: rtl;
+    }
+
+    .btn_grp_pesan{
+        background-color: #39de62;
+        color: white;
+        border-color: #39de62;
+    }

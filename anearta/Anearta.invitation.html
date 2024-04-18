@@ -1,0 +1,303 @@
+<!--belajar-->
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anearta Invitation </title>
+
+  <!-- group js -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      // Tambahkan animasi scroll ke setiap link
+      $('a[href^="#"]').on('click', function (event) {
+        event.preventDefault();
+        var target = $(this).attr("href"); // Get the target ID from the clicked link
+        $('html, body').animate({
+          scrollTop: $(target).offset().top // Scroll the page to the target position
+        }, 800);
+      });
+
+      $('a[data-bs-toggle="pill"]').on('click', function (event) {
+        event.preventDefault();
+        var target = $(this).attr("href"); // Ambil nilai href dari link yang diklik
+        $('html, body').animate({
+          scrollTop: $(target).offset().top // Scroll halaman ke posisi target
+        }, 800);
+      });
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+
+  <!-- group css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="anearta.css">
+
+</head>
+
+<body id="Home" class="body">
+
+  <!--NAVBAR  Header  Dropdown-->
+  <nav class="navbar nav-pills bg-body-tertiary bg-opacity-100 mb-3 position-fixed w-100 " role="tablist"
+    style="z-index:1;" aria-expanded="false">
+    <a class="navbar-brand px-5" href="#Home">Anearta Invitation</a>
+    <ul class="navbar_button nav">
+      <li class="dropdown-center">
+        <a class="menu_btn nav-link dropdown-toggle d-md-none" data-bs-toggle="dropdown" href="#" role="button"
+          aria-expanded="false">Menu</a>
+        <ul class="menu_dropdown dropdown-menu">
+          <li><a class="dropdown-item" href="#Home">Home</a></li>
+          <li><a class="dropdown-item" href="#feature">Feature</a></li>
+          <li><a class="dropdown-item" href="#Product">Product</a></li>
+          <li><a class="dropdown-item" href="#Contact">Contact</a></li>
+        </ul>
+      </li>
+      <li class="nav-item ">
+        <a class="d-none d-md-block" data-bs-toggle="pill" href="#Home">Home</a>
+      </li>
+      <li class="nav-item d-md-block">
+        <a class="d-none d-md-block" data-bs-toggle="pill" href="#feature">Feature</a>
+      </li>
+      <li class="nav-item d-md-block">
+        <a class="d-none d-md-block" data-bs-toggle="pill" href="#Product">Product</a>
+      </li>
+      <li class="nav-item d-md-block">
+        <a class="d-none d-md-block" data-bs-toggle="pill" href="#Contact">Contact</a>
+      </li>
+    </ul>
+  </nav>
+
+  <!--BERANDA-->
+  <div class="home d-flex justify-content-center align-items-end">
+    <img src="img/BerandaBlur.jpg" alt="" class="imgberanda container-fluid P-0">
+    <div class="position-absolute">
+      <div class="">
+        <div class="Judul p-4 p-md-5">
+          <p class="text_judul display-4">
+          <h3 style="color: white; font-family:niramit;">BUAT UNDANGAN PERNIKAHANMU BERKESAN</h3>
+          </p>
+          <p class="lead">Jadikan pengalaman pernikahan
+            yang tak terlupakan melalui inovasi dan teknologi,
+            menghubungkan cinta dengan kemudahan digital dan pengalaman
+            yang menarik bagi para tamu undangan.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="feature" class="container text-center mt-5">
+    <div class="row align-items-center m-2" style="font-size: small;">
+      <div class="col-4">
+        <h5>BIAYA MURAH</h5>
+        <p>Undang tamu anda tanpa batas</p>
+      </div>
+      <div class="col-4">
+        <h5>HEMAT WAKTU</h5>
+        <p>Kirim undangan via sosmed</p>
+      </div>
+      <div class="col-4">
+        <h5>DESIGN MODERN</h5>
+        <p>Beragam tema design modern</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- FEATURE -->
+  <div class="benefit_container container-sm flex-xl-column">
+    <div class="interaktif1 mb-lg-5">
+      <img src="img/BerandaBlur.jpg" alt="" class="imgberanda img-fluid P-0 rounded-5">
+      <div class="text_interaktif1">
+        <h1 id="" class="">
+          DESIGN VISUAL MODERN & MENARIK
+        </h1>
+        <div class="">
+          <p>Gaya minimalis dengan sentuhan kreatif seperti garis-garis geometris, lapisan efek, atau elemen transparan.
+            Warna & jenis typography yang modern dan sejalan dengan tema pernikahan anda, kombinasi tipografi yang
+            menarik untuk judul, teks, dan elemen penting lainnya. Animasi seperti efek parallax scrolling atau
+            pergerakan elemen saat pengguna berinteraksi dengan halaman.</p>
+          <div class="btn_lihat">
+            <a href="#Product"><button type="button" class="btn btn-outline-primary">Lihat</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="interaktif2 mb-lg-5">
+      <div class="text_interaktif2">
+        <h1 id="" class="">
+          PENGALAMAN MOMEN INDAH & KISAH CINTA
+        </h1>
+        <div>
+          <p>Unggah video / galeri foto yang menampilkan momen indah pasangan sebelum pernikahan. Setiap foto bisa
+            disertai dengan cerita singkat & Video menjadi narasi visual yang menggambarkan perjalanan cinta dengan
+            lebih mendalam, halaman khusus yang menguraikan cerita bagaimana anda bertemu, mengenal satu sama lain dan
+            mengalami berbagai momen penting dalam hubungan.</p>
+          <div class="btn_lihat">
+            <a href="#Product"><button type="button" class="btn btn-outline-primary">Lihat</button></a>
+          </div>
+        </div>
+      </div>
+      <img src="img/BerandaBlur.jpg" alt="" class="imgberanda img-fluid P-0 rounded-5">
+    </div>
+
+    <div class="interaktif1 mb-lg-5">
+      <img src="img/BerandaBlur.jpg" alt="" class="imgberanda img-fluid P-0 rounded-5">
+      <div class="text_interaktif1">
+        <h1 id="" class="">
+          INFORMASI & RICIAN JADWAL ACARA
+        </h1>
+        <div class="">
+          <p>Memberikan informasi tentang perubahan waktu secara real-time. Acara dengan beberapa sesi atau pertemuan
+            membantu para tamu untuk mengatur jadwal mereka dan menghadiri sesi yang diinginkan, integrasi dengan peta
+            online memudahkan para tamu menemukan lokasi acara, memberikan kenyamanan bagi para tamu untuk mengakses
+            informasi penting secara mudah dan cepat.</p>
+          <div class="btn_lihat">
+            <a href="#Product"><button type="button" class="btn btn-outline-primary">Lihat</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="interaktif2 mb-lg-5">
+      <div class="text_interaktif2">
+        <h1 id="" class="">
+          INTERAKSI TAMU & FITUR RSVP ONLINE
+        </h1>
+        <div>
+          <p>Berinteraksi langsung dengan para tamu melalui fitur seperti kotak komentar. Memberikan pengalaman
+            interaksi lebih dekat dan kuat serta fitur RSVP online memungkinkan para tamu untuk mengkonfirmasi kehadiran
+            mereka secara online. </p>
+          <div class="btn_lihat">
+            <a href="#Product"><button type="button" class="btn btn-outline-primary">Lihat</button></a>
+          </div>
+        </div>
+      </div>
+      <img src="img/BerandaBlur.jpg" alt="" class="imgberanda img-fluid P-0 rounded-5">
+    </div>
+
+    <div class="pt-5 m-5 FF text-center">
+      <div class="judul">
+        <h3>FITUR & FASILITAS LAINNYA</h2>
+      </div>
+      <div class="mt-5 ff_2 justify-content-center">
+        <p> > Layanan free konsultasi sebelum pesan via chatting</p>
+        <p> > Kirim Link & Input nama tamu tanpa batas</p>
+        <p> > Live Streaming dengan Account Sosmed</p>
+        <p> > Responsif untuk perangkat mobile</p>
+        <p> > Request musik</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- PRODUCT -->
+  <div id="Product" class="mt-5 mb-5 text-center">
+    <div>
+      <h4>TEMA YANG TERSEDIA</h4>
+      <h6>pilih gambar untuk melihat visual design website undangan</h6>
+    </div>
+  </div>
+
+  <div class="container_product mt-5 mb-5 container-sm d-lg-flex">
+
+    <div class="product_1 d-lg-flex">
+      <div class="img_container card m-4" style="width: 18rem;">
+        <a href="Product/tema_1/Product_1.html"><img src="img/i.jpg" class="card-img-top" alt="..."></a>
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+          <a href="#" class="btn_grp_pesan btn btn-outline-success">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart2"
+              viewBox="0 0 16 16">
+              <path
+                d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z" />
+            </svg> Pesan</a>
+          <a href="#" class="btn_lihat btn btn-primary">Lihat</a>
+        </div>
+      </div>
+
+      <div class="img_container card m-4" style="width: 18rem;">
+        <a href="#"><img src="img/i.jpg" class="card-img-top" alt="preview"></a>
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+          <a href="#" class="btn_grp_pesan btn btn-outline-success">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart2"
+              viewBox="0 0 16 16">
+              <path
+                d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z" />
+            </svg> Pesan</a>
+          <a href="#" class="btn_lihat btn btn-primary">Lihat</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="product_1 d-lg-flex">
+      <div class="img_container card m-4" style="width: 18rem;">
+        <a href="#"><img src="img/i.jpg" class="card-img-top" alt="..."></a>
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+          <a href="#" class="btn_grp_pesan btn btn-outline-success">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart2"
+              viewBox="0 0 16 16">
+              <path
+                d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z" />
+            </svg> Pesan</a>
+
+          <a href="#" class="btn_lihat btn btn-primary">Lihat</a>
+        </div>
+      </div>
+
+      <div class="img_container card m-4" style="width: 18rem;">
+        <a href="#"><img src="img/i.jpg" class="card-img-top" alt="preview"></a>
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+          <a href="#" class="btn_grp_pesan btn btn-outline-success">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart2"
+              viewBox="0 0 16 16">
+              <path
+                d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z" />
+            </svg> Pesan</a>
+
+          <a href="#" class="btn_lihat btn btn-primary">Lihat</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- CONTACT -->
+  <div id="Contact" class="bg-info-subtle h-25">
+    <div class="text-center p-5">
+      <h4>Anearta Invitation</h4>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp"
+        viewBox="0 0 16 16">
+        <path
+          d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram"
+        viewBox="0 0 16 16">
+        <path
+          d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+      </svg>
+    </div>
+  </div>
+
+  </div>
+
+
+  <!-- The female knight has a floral ribbon with short pink hair using a closed dress armor 
+ Black pink was on the throne alone in the afternoon without anyone around -->
+
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+ @keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes entrancezoom {
+  from {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* ===================================================================== */
+/* ===================================================================== */
+
+.animate {
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
+  animation-timeline: view();
+  animation-range: entry;
+}
+
+[data-animation="fade-in"].animate {
+  animation: fade-in 2.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+[data-animation="entrancezoom"].animate  {
+  animation: entrancezoom 2s ease-in;
+}
+  
+
+/* ===================================================================== */
+/* ===================================================================== */
+
+[data-animation][data-animation][data-adelay="500"],
+body[data-animation][data-animation][data-adelay="500"].animate [data-animation]{
+animation-delay: 0.5s;}
+
+[data-animation][data-animation][data-adelay="1000"],
+body[data-animation][data-animation][data-adelay="1000"].animate [data-animation]{
+animation-delay: 1s;}
+
+[data-animation][data-animation][data-adelay="2000"],
+body[data-animation][data-animation][data-adelay="2000"].animate [data-animation]{
+animation-delay: 2s;
+}
+[data-animation][data-animation][data-adelay="3000"],
+body[data-animation][data-animation][data-adelay="3000"].animate [data-animation]{
+animation-delay: 3s;
+}
+
+/* ===================================================================== */
+/* ===================================================================== */
+
+[data-animation][data-animation][data-tduration="500"],
+body[data-animation][data-animation][data-tduration="500"].animate [data-animation]{
+transition-duration: 0.5s;}
+
+[data-animation][data-animation][data-tduration="1000"],
+body[data-animation][data-animation][data-tduration="1000"].animate [data-animation]{
+transition-duration: 1s;}
+
+[data-animation][data-animation][data-tduration="2000"],
+body[data-animation][data-animation][data-tduration="2000"].animate [data-animation]{
+transition-duration: 2s;}
+
+[data-animation][data-animation][data-tduration="3000"],
+body[data-animation][data-animation][data-tduration="3000"].animate [data-animation]{
+transition-duration: 3s;}
+
+/* ===================================================================== */
+/* ===================================================================== */

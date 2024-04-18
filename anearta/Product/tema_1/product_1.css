@@ -1,0 +1,370 @@
+#page2{
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.color1_text {
+    opacity: 1;
+    color: white;
+}
+
+.color2_text {
+    color: #ff5500;
+    font-family: 'Ephesis',cursive;
+}
+
+.text-center{
+    padding: 0.5rem;
+}
+
+/* Change the scrollbar style */
+body::-webkit-scrollbar {
+    width: 5px;
+    height: 10px;
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 5px;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background: #ff5500;
+    border-radius: 5px;
+  }
+  
+  body::-webkit-scrollbar-thumb:hover {
+    background: #d14600;
+  }
+  
+  body::-webkit-scrollbar-button {
+    display: none;
+  }
+  
+  body::-webkit-scrollbar-corner {
+    background: #f1f1f1;
+  }
+
+p {
+    padding: 0.1rem;
+    margin: 0;
+    font-family: 'Comfortaa', sans-serif;
+    font-size: medium !important;
+}
+
+h1 {
+    font-family: 'Ephesis', cursive;
+    font-weight: bolder !important;
+    font-size: 3rem;
+    padding: 0.5rem;
+}
+
+h2 {
+    font-family: 'Ephesis', cursive;
+    font-weight: bold !important;
+    font-size: 2.5rem;
+}  
+
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #ff5500;
+    --bs-btn-border-color: #fff;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #d14600;
+    --bs-btn-hover-border-color: #fff;
+    --bs-btn-active-bg: #d14600;
+    --bs-btn-active-border-color: white;
+    --bs-btn-active-color: white;
+    --bs-btn-font-family: 'Comfortaa', sans-serif;
+}
+
+/* welcome image*/
+
+.container_page1 {
+    display: flex;
+    flex-direction: column;
+    max-width: 425px;
+    margin: 0 auto;
+    padding: 0;
+    align-items: center;
+    overflow: hidden;
+}
+.container_page1 img {
+    width: 530px;
+}
+
+.container_content_page1 {
+    position: absolute;
+    max-width: 425px;
+    height: 750px;
+    display: flex;
+}
+.container_content_page2 {
+    width: 425px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.container_text{
+    align-self: flex-end;
+}
+.container_text2{
+    position: absolute;
+    align-self: flex-end;
+}
+
+/* only android structure  */
+
+
+.image {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    position: relative;
+    width: 425px;
+    overflow: hidden;
+}
+
+/* image size */
+.image img {
+    width: 530px;
+    height: auto;
+}
+
+/*  effect visual  */
+    /* borderstyle */
+    .borderstyle {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: self-end;
+        border: 0.2rem solid white;
+        /* border-radius: 5px; */
+        width: 400px;
+        height: 760px;
+        padding-bottom: 2rem;
+        margin-top:1rem;
+    }
+    /* image glow effect 
+    .image::after{
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 101%;
+                background-image: linear-gradient(180deg, #F6F8FA00 40%, #F6F8FA 100%);
+                opacity: 1;} */
+
+/* ayat container */
+.ayat {
+    background-color: #ff5500;
+}
+
+/* container event */
+.container_event {
+    margin: 10rem 0 5rem 0;
+    padding: 1rem;
+}
+
+/* simply countdown */
+.simply-countdown {
+    margin: 20px 0 50px 0px;
+    font-family: 'Comfortaa', sans-serif;
+}
+
+
+
+/* foto profile calon pengantin */
+.cln_wanita img,
+.cln_pria img {
+    max-width: 100%;
+    height: 15rem;
+}
+
+/* Eventdate container */
+
+.addon{
+    background-color: #fff;
+    opacity: 0.3;
+    max-width: 100;
+    border-radius: 25px;
+
+}
+
+.savethedate {
+    background-color: #ff5500;
+    /*background-color-container*/
+
+    .container_akad
+    /* style-container-akad */{
+        position: relative;
+        background-color: white;
+        height: 590.6px;
+        color: #ff5500;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 25px;
+    }
+
+    .container_akad img, .container_resepsi img {
+        max-width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0.3;
+        border-radius: 25px;
+    }
+
+    .text_akad, .text_respesi {
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container_resepsi
+
+    /* style-container-resepsi */
+        {
+        position: relative;
+        background-color: white;
+        height: 590.6px;
+        color: #ff5500;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 25px;
+    }
+
+    .container_livestream
+
+    /* style-container-resepsi */
+        {
+        background-color: #F6F8FA;
+        border-radius: 25px;
+        color: #ff5500;
+        font-size: medium;
+    }
+}
+
+/* ================================================================ */
+
+/* container-bg-lovestory */
+.container_lovestory {
+    background-color: #F6F8FA;
+    border: 3px solid #ff5500;
+    border-radius: 1.2rem;
+    width: 100%;
+}
+
+/* image-border */
+.container_lovestory img {
+    width: 100%;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+}
+
+/* h1 */
+.container_text h1 {
+    font-size: 3rem;
+    text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+}
+
+/* container-border */
+.container_content_lovestory {
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+/* text-color */
+.awal,
+.lamaran,
+.pernikahan {
+    color: #ff5500;
+}
+
+/* ================================================================ */
+
+/* container-galeri */
+.container_container_galeri {
+    margin: 0;
+    padding: 0;
+}
+
+/* galeri-size */
+.container_galeri img {
+    width: 100%;
+    border-radius: 1rem;
+    padding: 0.20rem;
+}
+
+/* ================================================================ */
+
+/* weddinggift & comment */
+
+/* container-Ucapan&Kehadiran-(RSVP)*/
+.container_ucapan {
+    border-radius: 5px;
+    padding: 20px;
+}
+
+/* Input Nama*/
+input[type=text],
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Input Ucapan*/
+input[type=Ucapan],
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* container-weddinggift*/
+.container_weddinggift {
+    background-color: #ff5500;
+    color: #F6F8FA;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.card_alamat {
+    background-color: #F6F8FA;
+    border-radius: 25px;
+    color: #ff5500;
+    font-size: medium;
+}
+
+.container_weddinggift img {
+    width: 100%;
+    border-radius: 1rem;
+    padding: 1rem;
+    flex-direction: column;
+}
+
+
+/* ================================================================ */
+
+.container_penutup img {
+    max-width: 60%;
+    border-radius: 2rem;
+}
+
+/* ================================================================ */
+/* ================================================================ */
